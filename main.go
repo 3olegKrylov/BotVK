@@ -30,7 +30,7 @@ func main() {
 
 		log.Printf("%s", update.Message.String())
 		if update.Message.Text == "/info" {
-			client.SendMessage(vkapi.NewMessage(vkapi.NewDstFromUserID(update.Message.FromID), "Привет, с вами на линии бот Олега, если хотите,(информцию обо мне /info),спросить как дела(/какдела) чтобы я поздоровался (/privet) и  (/что)"))
+			client.SendMessage(vkapi.NewMessage(vkapi.NewDstFromUserID(update.Message.FromID), "Привет, с вами на линии бот Олега, если хотите,(информцию обо мне /info)"))
 		}
 	}
 }
