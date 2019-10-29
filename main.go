@@ -32,25 +32,5 @@ func main() {
 		if update.Message.Text == "/info" {
 			client.SendMessage(vkapi.NewMessage(vkapi.NewDstFromUserID(update.Message.FromID), "Привет, с вами на линии бот Олега, если хотите,(информцию обо мне /info),спросить как дела(/какдела) чтобы я поздоровался (/privet) и  (/что)"))
 		}
-
-		if update.Message.Text == "/какдела" {
-			client.SendMessage(vkapi.NewMessage(vkapi.NewDstFromUserID(update.Message.FromID), "хорошо, не спрашивай больше меня ни о чём"))
-		}
-
-		if update.Message.Text == "/privet" {
-			client.SendMessage(vkapi.NewMessage(vkapi.NewDstFromUserID(update.Message.FromID), "Hello!"))
-		}
-
-		if update.Message.Text == "/dania" {
-			client.SendMessage(vkapi.NewMessage(vkapi.NewDstFromUserID(update.Message.FromID), "Даня лох..."))
-		}
-		if update.Message.Text == "/vova" {
-			client.SendMessage(vkapi.NewMessage(vkapi.NewDstFromUserID(update.Message.FromID), "О святой господин Геюг"))
-		}
-
-		if update.Message.Text == "/что" {
-			client.SendMessage(vkapi.NewMessage(vkapi.NewDstFromUserID(update.Message.FromID), "могу всё что угодно"))
-		}
-
 	}
 }
